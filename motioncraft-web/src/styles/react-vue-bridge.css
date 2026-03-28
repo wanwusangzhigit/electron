@@ -1,0 +1,225 @@
+/* 文件路径: src/styles/react-vue-bridge.css */
+
+/* Vue Web Component 容器样式 */
+motioncraft-properties-panel {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 属性面板内部样式穿透 */
+.vue-panel-root {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* 属性区块 */
+.property-section {
+  margin-bottom: 16px;
+}
+
+.property-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--mc-text-primary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.property-section-header:hover {
+  color: var(--mc-accent);
+}
+
+.property-section-content {
+  padding-top: 8px;
+}
+
+/* 属性行 */
+.property-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.property-label {
+  width: 70px;
+  font-size: 12px;
+  color: var(--mc-text-secondary);
+  flex-shrink: 0;
+}
+
+.property-input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 数字输入框（带单位） */
+.number-input-with-unit {
+  position: relative;
+  flex: 1;
+}
+
+.number-input-with-unit input {
+  width: 100%;
+  padding-right: 24px;
+}
+
+.number-input-unit {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: var(--mc-text-tertiary);
+  pointer-events: none;
+}
+
+/* 滑块控件 */
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slider {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--mc-bg-tertiary);
+  border-radius: 2px;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--mc-accent);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: var(--mc-accent-light);
+}
+
+/* 颜色选择器 */
+.color-picker-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.color-preview {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--mc-border);
+  cursor: pointer;
+}
+
+.color-value {
+  flex: 1;
+  font-family: monospace;
+  font-size: 11px;
+}
+
+/* 关键帧列表 */
+.keyframe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.keyframe-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  background: var(--mc-bg-tertiary);
+  border-radius: var(--mc-radius-sm);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.keyframe-item:hover {
+  background: var(--mc-bg-hover);
+}
+
+.keyframe-item.selected {
+  background: var(--mc-accent-alpha);
+  border: 1px solid var(--mc-accent);
+}
+
+.keyframe-time {
+  color: var(--mc-text-secondary);
+}
+
+.keyframe-property {
+  color: var(--mc-text-primary);
+  font-weight: 500;
+}
+
+.keyframe-easing {
+  color: var(--mc-text-tertiary);
+  font-style: italic;
+}
+
+/* 时间轴缩略图 */
+.timeline-thumbnail {
+  width: 100%;
+  height: 32px;
+  background: var(--mc-track-bg);
+  border-radius: var(--mc-radius-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail-playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--mc-playhead);
+}
+
+.thumbnail-keyframe {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: var(--mc-keyframe);
+  rotate: 45deg;
+}
+
+/* 空状态 */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  color: var(--mc-text-tertiary);
+  text-align: center;
+}
+
+.empty-state-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.empty-state-text {
+  font-size: 13px;
+}
