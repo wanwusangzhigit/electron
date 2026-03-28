@@ -1,0 +1,60 @@
+// 文件路径: src/styles/theme.css
+:root {
+  /* 背景色阶 */
+  --mc-bg-primary: #0f0f0f;
+  --mc-bg-secondary: #1a1a1a;
+  --mc-bg-tertiary: #252525;
+  --mc-bg-hover: #2a2a2a;
+  --mc-bg-active: #2f2f2f;
+
+  /* 边框 */
+  --mc-border: #333333;
+  --mc-border-light: #444444;
+  --mc-border-accent: #00d6b4;
+
+  /* 文字 */
+  --mc-text-primary: #ffffff;
+  --mc-text-secondary: #b0b0b0;
+  --mc-text-tertiary: #666666;
+  --mc-text-disabled: #444444;
+
+  /* 主题色 */
+  --mc-accent: #00d6b4;
+  --mc-accent-hover: #00b89a;
+  --mc-accent-light: #00f5ce;
+  --mc-accent-alpha: rgba(0, 214, 180, 0.2);
+
+  /* 功能色 */
+  --mc-danger: #ff4444;
+  --mc-warning: #ffaa00;
+  --mc-success: #00d6b4;
+  --mc-info: #4488ff;
+
+  /* 时间轴专用 */
+  --mc-track-bg: #1e1e1e;
+  --mc-track-alt-bg: #252525;
+  --mc-playhead: #ff4444;
+  --mc-keyframe: #00d6b4;
+  --mc-clip-image: #4488ff;
+  --mc-clip-text: #ffaa00;
+  --mc-clip-shape: #00d6b4;
+
+  /* 尺寸 */
+  --mc-toolbar-height: 48px;
+  --mc-left-panel-width: 280px;
+  --mc-right-panel-width: 340px;
+  --mc-timeline-height: 200px;
+  --mc-track-height: 40px;
+
+  /* 圆角 */
+  --mc-radius-sm: 4px;
+  --mc-radius-md: 8px;
+  --mc-radius-lg: 12px;
+
+  /* 过渡 */
+  --mc-transition-fast: 150ms ease;
+  --mc-transition-normal: 300ms ease;
+
+  /* 字体 */
+  --mc-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}

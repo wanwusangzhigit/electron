@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MotionCraft Web - Browser-based MG Animation Editor" />
+    <title>MotionCraft Web</title>
+    <!-- FFmpeg.wasm requires SharedArrayBuffer support -->
+    <script>
+      if (typeof crossOriginIsolated === 'undefined' || !crossOriginIsolated) {
+        console.warn('SharedArrayBuffer is not available. FFmpeg.wasm export may not work.');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
